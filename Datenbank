@@ -12,5 +12,5 @@ select * from Zutaten
 insert into Zutaten values ('Gurke', 'Gemüse')
 insert into Zutaten values ('Zwiebel', 'Gemüse')
 insert into Zutaten values ('Salat', 'Gemüse')
-
+-- UPDATE Zutaten SET Zutat = 'Salatblatt' WHERE ID=5 (Verändern der Zutat)
 -- ABCXXX
