@@ -1,1 +1,14 @@
 create database Rezeptbuch
+
+use Spielwiese;
+
+create Table Zutaten(
+	ID int primary key identity(1,1),
+	Zutat char(25),
+	Kategorie char(35)
+	)
+
+select * from Zutaten
+insert into Zutaten values ('Gurke', 'Gemüse')
+insert into Zutaten values ('Zwiebel', 'Gemüse')
+insert into Zutaten values ('Salat', 'Gemüse')
