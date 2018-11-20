@@ -1,14 +1,15 @@
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 img {
     width: 100%;
-    height: auto;
-    border-radius: 20px;
     margin: 0;
     padding: 0;
-    z-index: 0;
+    z-index: -1;
+    float:none;
+    height: 200px;
 }
 
 .row::after {
@@ -19,7 +20,7 @@ img {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 5px;
 }
 
 html {
@@ -30,7 +31,7 @@ html {
 .header {
     background-color: lightgreen;
     color: #ffffff;
-    height: 100px;
+    height: 200px;
     margin-bottom: 3px;
 }
 
@@ -65,6 +66,10 @@ button{
     text-align: center;
 }
 
+.content{
+    
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -78,6 +83,7 @@ button{
     color: black;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     text-align: center;
+    border-radius: 4px;
 }
 
 .menu li:hover {
@@ -91,9 +97,30 @@ button{
     text-align: center;
     font-size: 14px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+}
+.content_b{
+    background-color: lightgreen;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+}
+.content_c{
+    background-color: lightgreen;
+    float:right;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+}
+
+.content_c img{
+    width: 100%;
+    height: auto;
+    padding: -15px;
 }
 
 .footer {
+    background-image: url('images\k.jpg');
     background-color: lightgreen;
     color: black;
     text-align: center;
