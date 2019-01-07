@@ -9,7 +9,22 @@
     <title>Gruppe_8</title>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
 
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color:#f5f5f5;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,8 +60,8 @@
     <?php
             $pdo = new PDO('mysql:host=localhost;dbname=rezeptbuch', 'root', '');
 
-            echo "<table border='1' cellpadding='10'>";
-            echo "<tr><th>ID</th><th>Rezept Name</th><th>Kategorie 1</th><th>Kategorie 2</th><th>Kategorie 3</th><th></th><th></th></tr>";
+            echo "<table>";
+            echo "<tr><th>ID</th><th>Rezept Name</th><th>Kategorie 1</th><th>Kategorie 2</th><th>Kategorie 3</th><th></th><th></th><th></th></tr>";
             $sql = "SELECT * FROM rezepte ORDER BY ID";
                 foreach ($pdo->query($sql) as $row) {
                 echo "<tr>";
@@ -55,8 +70,9 @@
                 echo "<td>" . $row['cathegory1'] . "</td>";
                 echo "<td>" . $row['cathegory2'] . "</td>"; 
                 echo "<td>" . $row['cathegory3'] . "</td>";
-                echo "<td><a href='records.php?id=" . $row['ID'] . ">Bearbeiten</td>";
-                echo "<td><a href='delete.php?id=" . $row['ID'] . ">Löschen</td>";
+                echo "<td><a href='records.php?id=" . $row['ID'] . "'>Anzeigen</td>";
+                echo "<td><a href='records.php?id=" . $row['ID'] . "'>Bearbeiten</td>";
+                echo "<td><a href='includes/delete.php?id=" . $row['ID'] . "'>Löschen</td>";
                 echo "</tr>";
                 }
             echo"</table>";
