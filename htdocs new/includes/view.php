@@ -81,7 +81,10 @@
                 echo  "<tr><th>Zeit : </th><th>" . $row['time'] ."</th></tr>";
                 echo  "<tr><th>Anzahl : </th><th>" . $row['amount'] ."</th></tr>";
                 }
-        echo "</table>";
+                echo "</table>";
+        echo "<br>";
+        echo "<br>";
+        echo "<a href = .././Alle_Rezepte.php>Zurück</a>";    
     ?>
         </div>
     </div>
