@@ -65,21 +65,21 @@
             echo "<table>";
             $sql = "SELECT * FROM rezepte WHERE id =" .$id ."";
                 foreach ($pdo->query($sql) as $row) {
-                echo  "<tr><th>Rezept Name : </th><th>" . $row['namerecipe'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 1 : </th><th>" . $row['ingredient1'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 2 : </th><th>" . $row['ingredient2'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 3 : </th><th>" . $row['ingredient3'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 4 : </th><th>" . $row['ingredient4'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 5 : </th><th>" . $row['ingredient5'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 6 : </th><th>" . $row['ingredient6'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 7 : </th><th>" . $row['ingredient7'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 8 : </th><th>" . $row['ingredient8'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 9 : </th><th>" . $row['ingredient9'] ."</th></tr><br>";
-                echo  "<tr><th>Zutat 10 : </th><th>" . $row['ingredient10'] ."</th></tr><br>";    
-                echo  "<tr><th>Zubereitung : </th><th>" . $row['preparation'] ."</th></tr><br>";
-                echo  "<tr><th>Schwierigkeitsgrad : </th><th>" . $row['difficulty'] ."</th></tr><br>"; 
-                echo  "<tr><th>Zeit : </th><th>" . $row['time'] ."</th></tr><br>";
-                echo  "<tr><th>Anzahl : </th><th>" . $row['amount'] ."</th></tr><br>";
+                echo  "<tr><th>Rezept Name : </th><th>" . $row['namerecipe'] ."</th></tr>";
+                echo  "<tr><th>Zutat 1 : </th><th>" . $row['ingredient1'] ."</th></tr>";
+                echo  "<tr><th>Zutat 2 : </th><th>" . $row['ingredient2'] ."</th></tr>";
+                echo  "<tr><th>Zutat 3 : </th><th>" . $row['ingredient3'] ."</th></tr>";
+                echo  "<tr><th>Zutat 4 : </th><th>" . $row['ingredient4'] ."</th></tr>";
+                echo  "<tr><th>Zutat 5 : </th><th>" . $row['ingredient5'] ."</th></tr>";
+                echo  "<tr><th>Zutat 6 : </th><th>" . $row['ingredient6'] ."</th></tr>";
+                echo  "<tr><th>Zutat 7 : </th><th>" . $row['ingredient7'] ."</th></tr>";
+                echo  "<tr><th>Zutat 8 : </th><th>" . $row['ingredient8'] ."</th></tr>";
+                echo  "<tr><th>Zutat 9 : </th><th>" . $row['ingredient9'] ."</th></tr>";
+                echo  "<tr><th>Zutat 10 : </th><th>" . $row['ingredient10'] ."</th></tr>";    
+                echo  "<tr><th>Zubereitung : </th><th>" . $row['preparation'] ."</th></tr>";
+                echo  "<tr><th>Schwierigkeitsgrad : </th><th>" . $row['difficulty'] ."</th></tr>"; 
+                echo  "<tr><th>Zeit : </th><th>" . $row['time'] ."</th></tr>";
+                echo  "<tr><th>Anzahl : </th><th>" . $row['amount'] ."</th></tr>";
                 }
         echo "</table>";
     ?>
