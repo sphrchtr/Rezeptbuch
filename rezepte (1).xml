@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Erstellungszeit: 08. Jan 2019 um 15:38
+- Server-Version: 10.1.37-MariaDB
+- PHP-Version: 7.3.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="rezeptbuch" collation="utf8_german2_ci" charset="utf8">
+            <pma:table name="rezepte">
+                CREATE TABLE `rezepte` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `namerecipe` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient1` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient2` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient3` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient4` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient5` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient6` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient7` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient8` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient9` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `ingredient10` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `preparation` varchar(1000) COLLATE utf8_german2_ci DEFAULT NULL,
+                  `cathegory1` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `cathegory2` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `cathegory3` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `difficulty` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `time` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `amount` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  `source` varchar(30) COLLATE utf8_german2_ci NOT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 COLLATE=utf8_german2_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Datenbank: 'rezeptbuch'
+    -->
+    <database name="rezeptbuch">
+        <!-- Tabelle rezepte -->
+        <table name="rezepte">
+            <column name="ID">17</column>
+            <column name="namerecipe">Schnitzel</column>
+            <column name="ingredient1">Schweinefleisch</column>
+            <column name="ingredient2">Semmel</column>
+            <column name="ingredient3">Ei</column>
+            <column name="ingredient4">Mehl</column>
+            <column name="ingredient5"></column>
+            <column name="ingredient6"></column>
+            <column name="ingredient7"></column>
+            <column name="ingredient8"></column>
+            <column name="ingredient9"></column>
+            <column name="ingredient10"></column>
+            <column name="preparation">Du weiÃŸt wie</column>
+            <column name="cathegory1">Essen</column>
+            <column name="cathegory2"></column>
+            <column name="cathegory3"></column>
+            <column name="difficulty"></column>
+            <column name="time"></column>
+            <column name="amount"></column>
+            <column name="source"></column>
+        </table>
+        <table name="rezepte">
+            <column name="ID">18</column>
+            <column name="namerecipe">Name</column>
+            <column name="ingredient1">Zutat1</column>
+            <column name="ingredient2">Zutat2</column>
+            <column name="ingredient3">Zutat3</column>
+            <column name="ingredient4">Zutat4</column>
+            <column name="ingredient5">Zutat5</column>
+            <column name="ingredient6">Zutat6</column>
+            <column name="ingredient7">Zutat7</column>
+            <column name="ingredient8">Zutat8</column>
+            <column name="ingredient9">Zutat9</column>
+            <column name="ingredient10">Zutat10</column>
+            <column name="preparation">Zubereitung</column>
+            <column name="cathegory1">Kategorie1</column>
+            <column name="cathegory2">Kategorie2</column>
+            <column name="cathegory3">Kategorie3</column>
+            <column name="difficulty">Schwierigkeit</column>
+            <column name="time">Zeit</column>
+            <column name="amount">Menge</column>
+            <column name="source">Quelle</column>
+        </table>
+        <table name="rezepte">
+            <column name="ID">29</column>
+            <column name="namerecipe">noooo</column>
+            <column name="ingredient1"></column>
+            <column name="ingredient2"></column>
+            <column name="ingredient3"></column>
+            <column name="ingredient4"></column>
+            <column name="ingredient5"></column>
+            <column name="ingredient6"></column>
+            <column name="ingredient7"></column>
+            <column name="ingredient8"></column>
+            <column name="ingredient9"></column>
+            <column name="ingredient10"></column>
+            <column name="preparation"></column>
+            <column name="cathegory1"></column>
+            <column name="cathegory2"></column>
+            <column name="cathegory3"></column>
+            <column name="difficulty"></column>
+            <column name="time"></column>
+            <column name="amount"></column>
+            <column name="source"></column>
+        </table>
+        <table name="rezepte">
+            <column name="ID">30</column>
+            <column name="namerecipe">Katoffeln</column>
+            <column name="ingredient1"></column>
+            <column name="ingredient2"></column>
+            <column name="ingredient3"></column>
+            <column name="ingredient4"></column>
+            <column name="ingredient5"></column>
+            <column name="ingredient6"></column>
+            <column name="ingredient7"></column>
+            <column name="ingredient8"></column>
+            <column name="ingredient9"></column>
+            <column name="ingredient10"></column>
+            <column name="preparation"></column>
+            <column name="cathegory1"></column>
+            <column name="cathegory2"></column>
+            <column name="cathegory3"></column>
+            <column name="difficulty"></column>
+            <column name="time"></column>
+            <column name="amount"></column>
+            <column name="source"></column>
+        </table>
+        <table name="rezepte">
+            <column name="ID">47</column>
+            <column name="namerecipe">Suppe</column>
+            <column name="ingredient1"></column>
+            <column name="ingredient2"></column>
+            <column name="ingredient3"></column>
+            <column name="ingredient4"></column>
+            <column name="ingredient5"></column>
+            <column name="ingredient6"></column>
+            <column name="ingredient7"></column>
+            <column name="ingredient8"></column>
+            <column name="ingredient9"></column>
+            <column name="ingredient10"></column>
+            <column name="preparation"></column>
+            <column name="cathegory1"></column>
+            <column name="cathegory2"></column>
+            <column name="cathegory3"></column>
+            <column name="difficulty"></column>
+            <column name="time"></column>
+            <column name="amount"></column>
+            <column name="source">Penis</column>
+        </table>
+        <table name="rezepte">
+            <column name="ID">48</column>
+            <column name="namerecipe">Test</column>
+            <column name="ingredient1"></column>
+            <column name="ingredient2"></column>
+            <column name="ingredient3"></column>
+            <column name="ingredient4"></column>
+            <column name="ingredient5"></column>
+            <column name="ingredient6"></column>
+            <column name="ingredient7"></column>
+            <column name="ingredient8"></column>
+            <column name="ingredient9"></column>
+            <column name="ingredient10"></column>
+            <column name="preparation"></column>
+            <column name="cathegory1"></column>
+            <column name="cathegory2"></column>
+            <column name="cathegory3"></column>
+            <column name="difficulty"></column>
+            <column name="time"></column>
+            <column name="amount"></column>
+            <column name="source">Penis</column>
+        </table>
+    </database>
+</pma_xml_export>
