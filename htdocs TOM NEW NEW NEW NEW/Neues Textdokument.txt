@@ -1,0 +1,52 @@
+<form class="row col-12 col-s-12" action="includes/insert.php" method="post">
+    <h2>Rezepte Hinzufügen</h2>
+      <p>
+        <label for="namerecipe">Rezeptname:</label><br>
+        <input type="text" name="namerecipe" id="namerecipe">
+      </p><br>
+      <p>
+        <label for="ingredient">Zutaten:</label><br>
+        <input class="Field" type="text" name="ingredient1" id="ingredient">
+        <input class="Field" type="text" name="ingredient2" id="ingredient">
+        <input class="Field" type="text" name="ingredient3" id="ingredient">
+        <input class="Field" type="text" name="ingredient4" id="ingredient">
+        <input class="Field" type="text" name="ingredient5" id="ingredient">
+      </p><br>
+      <p>
+        <label style="visibility:hidden">Zutaten:</label><br>
+        <input class="Field" type="text" name="ingredient6" id="ingredient">
+        <input class="Field" type="text" name="ingredient7" id="ingredient">
+        <input class="Field" type="text" name="ingredient8" id="ingredient">
+        <input class="Field" type="text" name="ingredient9" id="ingredient">
+        <input class="Field" type="text" name="ingredient10" id="ingredient">
+      </p><br>
+      <p>
+        <label for="preparation">Zubereitung:</label><br>
+        <input type="text" name="preparation" id="preparation">
+      </p><br>
+      <p>
+        <label for="cathegory">Kategorie:</label><br>
+        <input type="text" name="cathegory1" id="cathegory">
+        <input type="text" name="cathegory2" id="cathegory">
+        <input type="text" name="cathegory3" id="cathegory">
+      </p><br>
+      <p>
+        <label for="difficulty">Schwierigkeitsgrad:</label><br>
+        <input type="text" name="difficulty" id="difficulty">
+      </p><br>
+      <p>
+        <label for="time">Zeitangabe:</label><br>
+        <input type="text" name="time" id="time">
+      </p><br>
+      <p>
+        <label for="amount">Mengenangabe:</label><br>
+        <input type="text" name="amount" id="amount">
+      </p><br>
+      <p>
+        <label for="source">Quelle:</label><br>
+        <input type="text" name="source" id="source">
+      </p><br>
+      <p>
+        <input type="submit" value="Rezept Hinzufügen" target="_blank">
+      </p>
+</form>
