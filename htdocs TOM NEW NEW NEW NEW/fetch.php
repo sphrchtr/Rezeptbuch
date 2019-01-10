@@ -61,6 +61,9 @@ if(mysqli_num_rows($result) > 0)
 				<td>'.$row["time"].'</td>
 				<td>'.$row["difficulty"].'</td>
 				<td>'.$row["source"].'</td>
+				<td><a href="includes/view.php?id='.$row["ID"].'">Anzeigen</td>;
+                		<td><a href="includes/edit.php?id='. $row["ID"].'">Bearbeiten</td>;
+                		<td><a href="includes/delete.php?id='. $row["ID"].'">Löschen</td>;
 			</tr>
 		';
 	}
